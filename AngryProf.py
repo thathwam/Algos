@@ -1,3 +1,7 @@
+"""
+Angry Professor puzzle from Hacker rank @ 
+https://www.hackerrank.com/challenges/angry-professor
+"""
 #!/bin/python3
 
 import sys
