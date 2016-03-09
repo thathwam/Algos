@@ -25,4 +25,3 @@ class LinkedList:
     def swap_nodes(self, x, y):
         pass
 
-    
