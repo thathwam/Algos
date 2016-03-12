@@ -23,5 +23,41 @@ class LinkedList:
         self.head = new_node
 
     def swap_nodes(self, x, y):
-        pass
+        if self.head is None:
+            print("Empty List")
+            return
 
+        if x == y:
+            return
+
+        prev_x = None
+        cur_x = self.head
+        while cur_x is not None and cur_x.data != x:
+            prev_x = cur_x
+            cur_x = cur_x.next
+
+        prev_y = None
+        cur_y = self.head
+        while cur_y is not None and cur_y.data != y:
+            prev_y = cur_y
+            cur_y = cur_y.next
+
+        if cur_x is None or cur_y is None:
+            print('Either of x, y not found')
+            return
+
+        if prev_x != None:
+            prev_x.next = cur_y
+        else: #make y the new head
+            self.head = cur_y
+
+        # If y is not head of linked list
+        if prev_y != None:
+            prev_y.next = cur_x
+        else: # make x the new head
+            self.head = cur_x
+
+        # Swap next pointers
+        temp = cur_x.next
+        cur_x.next = cur_y.next
+        cur_y.next = temp
