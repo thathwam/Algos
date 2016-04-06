@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LinkedList/.idea/LinkedList.iml" filepath="$PROJECT_DIR$/../LinkedList/.idea/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Stack.iml" filepath="$PROJECT_DIR$/.idea/Stack.iml" />
     </modules>
   </component>
