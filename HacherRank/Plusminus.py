@@ -7,9 +7,7 @@ The second line contains NN space-separated integers describing the array of num
 
 Output Format
 
-Print each value on its own line with the fraction of positive numbers first, negative numbers second, and zeroes third.
-
-
+Print each value on its own line with the fraction of positive numbers first, negative numbers second, and zeroes third
 #include <cmath>
 #include <cstdio>
 #include <vector>
