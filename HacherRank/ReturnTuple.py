@@ -9,3 +9,10 @@ def divide(a, b):
         return True, a / b
     except ZeroDivisionError:
         return False, None
+
+
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError as e:
+        raise ValueError('Invalid inputs') from e
