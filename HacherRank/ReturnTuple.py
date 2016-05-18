@@ -2,6 +2,8 @@
 Refer safari online notes from effective Python book....
 
 The first way is to split the return value into a two-tuple. The first part of the tuple indicates that the operation was a success or failure. The second part is the actual result that was computed.
+
+The point is that it's better to send exception than none. Then why not send the default exception?
 """
 
 def divide(a, b):
