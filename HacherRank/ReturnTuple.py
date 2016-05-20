@@ -18,3 +18,14 @@ def divide(a, b):
         return a / b
     except ZeroDivisionError as e:
         raise ValueError('Invalid inputs') from e
+
+
+def sort_priority2(numbers, group):
+    found = False
+    def helper(x):
+        if x in group:
+            found = True  # Seems simple
+            return (0, x)
+        return (1, x)
+    numbers.sort(key=helper)
+    return found
