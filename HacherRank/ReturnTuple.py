@@ -29,3 +29,8 @@ def sort_priority2(numbers, group):
         return (1, x)
     numbers.sort(key=helper)
     return found
+
+def read_visits(data_path):
+    with open(data_path) as f:
+        for line in f:
+            yield int(line)
