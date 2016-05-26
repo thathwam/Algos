@@ -1,5 +1,5 @@
 """
-Refer safari online notes from effective Python book....
+Refer safari online notes from effective Python book.... Refer these to get ideas and improve techniques
 
 The first way is to split the return value into a two-tuple. The first part of the tuple indicates that the operation was a success or failure. The second part is the actual result that was computed.
 
@@ -34,3 +34,7 @@ def read_visits(data_path):
     with open(data_path) as f:
         for line in f:
             yield int(line)
+
+it = read_visits('/tmp/my_numbers.txt')
+percentages = normalize(it)
+print(percentages)
